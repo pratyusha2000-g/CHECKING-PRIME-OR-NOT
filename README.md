@@ -10,12 +10,12 @@ void main()
 
 void prime(int n,int i,int c)
 {
-  if(n%i==0)
+  if(i<=n/2)
     {
-       c++;
-       i++;
-       if(i<=n/2)
-           prime(n,i,c);
+       if(n%i==0)
+           c++;
+        i++;
+        prime(n,i,c);
      }
    else
     {
